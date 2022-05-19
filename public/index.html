@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>React App</title>
+</head>
+
+<body style="background-image:
+url('data:image/jpeg;base64,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');
+background-size: cover;">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6920e878f4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
